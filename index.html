@@ -12,13 +12,44 @@
 
 <body>
   <div class="row g-0 text-center">
-    <div class="col-6 col-md-2" style="background-color: aqua;">NOTE-IT</div>
-    <div class="col-sm-6 col-md-10" style="background-color: aquamarine;">
-        <div class="container border border-danger">
-          <h1>Hey create Your First Note!</h1>
+    <div class="col-6 col-md-2 h-100 mh-100" style="background-color: aqua;">
+      <h2>NOTE-IT</h2>
+      <div class="container" id="searchcontainer">
+        <div class="input-group input-group-sm mb-2">
+          <span class="input-group-text" id="inputGroup-sizing-sm">search</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm">
         </div>
+      </div>
+      <div class="container" id="btncontainer">
+        <button type="button" class="btn btn-light" id="addnotes">Add Note</button>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-10 h-100 mh-100" id="notespanel" style="background-color: aquamarine;">
+      <div class="container border border-danger">
+        <h1>Hey create Your First Note!</h1>
+        <div class="container" id="notesarea">
+          <div class="input-group mb-0">
+            <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-0">
+            <span class="input-group-text" id="inputGroup-sizing-default">Content</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="container-lg">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-primary">Pin</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
